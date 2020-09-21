@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoffeeDecoratorApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тип кофе" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="468-RL-PQB">
+                                <rect key="frame" x="145" y="94" width="124" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Q0g-5R-H6u">
+                                <rect key="frame" x="68" y="180" width="278" height="32"/>
+                                <segments>
+                                    <segment title="Американо"/>
+                                    <segment title="Эспрессо"/>
+                                    <segment title="Ристретто"/>
+                                </segments>
+                                <connections>
+                                    <action selector="typeSwitched:" destination="BYZ-38-t0r" eventType="valueChanged" id="5c5-NX-UUo"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Цена кофе" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mr8-gV-dso">
+                                <rect key="frame" x="99" y="261" width="216.5" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VYz-jw-5JM">
+                                <rect key="frame" x="240.5" y="361.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="milkSwitched:" destination="BYZ-38-t0r" eventType="valueChanged" id="TTU-F8-lMa"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Fhv-af-BuD">
+                                <rect key="frame" x="241" y="435.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="caramelSwitched:" destination="BYZ-38-t0r" eventType="valueChanged" id="Yxa-jK-PpO"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Молоко" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lX-vh-oYz">
+                                <rect key="frame" x="50" y="365" width="71.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Карамель" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fa4-rT-DFp">
+                                <rect key="frame" x="50" y="439" width="90.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сахар" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Srs-5w-klA">
+                                <rect key="frame" x="50" y="513" width="57" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8qR-rV-hXr">
+                                <rect key="frame" x="240" y="509.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="sugarSwitched:" destination="BYZ-38-t0r" eventType="valueChanged" id="SsH-xM-Osz"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7lX-vh-oYz" firstAttribute="top" secondItem="mr8-gV-dso" secondAttribute="bottom" constant="50" id="3f9-LM-FxG"/>
+                            <constraint firstItem="7lX-vh-oYz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="3jg-wW-d7W"/>
+                            <constraint firstItem="fa4-rT-DFp" firstAttribute="top" secondItem="7lX-vh-oYz" secondAttribute="bottom" constant="50" id="73W-oo-OKD"/>
+                            <constraint firstItem="mr8-gV-dso" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9uf-3F-vVA"/>
+                            <constraint firstItem="VYz-jw-5JM" firstAttribute="leading" secondItem="7lX-vh-oYz" secondAttribute="trailing" constant="119" id="A7o-pb-Rnp"/>
+                            <constraint firstItem="8qR-rV-hXr" firstAttribute="centerY" secondItem="Srs-5w-klA" secondAttribute="centerY" id="Gvf-bm-hdV"/>
+                            <constraint firstItem="Fhv-af-BuD" firstAttribute="centerY" secondItem="fa4-rT-DFp" secondAttribute="centerY" id="KBF-go-DK4"/>
+                            <constraint firstItem="Srs-5w-klA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Nj1-I2-tQK"/>
+                            <constraint firstItem="mr8-gV-dso" firstAttribute="top" secondItem="Q0g-5R-H6u" secondAttribute="bottom" constant="50" id="OjX-ba-DNL"/>
+                            <constraint firstItem="468-RL-PQB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Z4a-Dp-i2Y"/>
+                            <constraint firstItem="Fhv-af-BuD" firstAttribute="leading" secondItem="fa4-rT-DFp" secondAttribute="trailing" constant="100.5" id="Z4d-TL-rVd"/>
+                            <constraint firstItem="Q0g-5R-H6u" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ePQ-4n-rMQ"/>
+                            <constraint firstItem="8qR-rV-hXr" firstAttribute="leading" secondItem="Srs-5w-klA" secondAttribute="trailing" constant="133" id="g50-hw-W7U"/>
+                            <constraint firstItem="VYz-jw-5JM" firstAttribute="centerY" secondItem="7lX-vh-oYz" secondAttribute="centerY" id="jOZ-zD-Qg6"/>
+                            <constraint firstItem="Q0g-5R-H6u" firstAttribute="top" secondItem="468-RL-PQB" secondAttribute="bottom" constant="50" id="jw8-ro-3KI"/>
+                            <constraint firstItem="Srs-5w-klA" firstAttribute="top" secondItem="fa4-rT-DFp" secondAttribute="bottom" constant="50" id="njP-9C-7xF"/>
+                            <constraint firstItem="fa4-rT-DFp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="unu-4p-v41"/>
+                            <constraint firstItem="468-RL-PQB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wh3-u5-BiN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="caramelSwitch" destination="Fhv-af-BuD" id="ZRj-L0-w1o"/>
+                        <outlet property="coffeePriceLabel" destination="mr8-gV-dso" id="LTx-so-lap"/>
+                        <outlet property="coffeeTypeControl" destination="Q0g-5R-H6u" id="OzU-cb-gHF"/>
+                        <outlet property="milkSwitch" destination="VYz-jw-5JM" id="bWI-zt-Ftj"/>
+                        <outlet property="sugarSwitch" destination="8qR-rV-hXr" id="Cfs-9t-88h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="56"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
