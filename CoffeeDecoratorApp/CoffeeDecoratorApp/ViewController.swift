@@ -9,7 +9,6 @@ import UIKit
 
 class ViewController: UIViewController{
     
-    
     @IBOutlet weak var coffeeTypeControl: UISegmentedControl!
     @IBOutlet weak var coffeePriceLabel: UILabel!
     @IBOutlet weak var milkSwitch: UISwitch!

@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol Coffee {
+protocol Coffee{
     
     func price() -> Int
 }

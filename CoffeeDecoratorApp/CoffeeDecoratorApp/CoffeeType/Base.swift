@@ -7,9 +7,9 @@
 
 import Foundation
 
-class Base: Coffee {
+class Base: Coffee{
     
-    func price() -> Int {
+    func price() -> Int{
         return 200
     }
 }

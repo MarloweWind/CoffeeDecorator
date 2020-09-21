@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Milk: CoffeeDecorator {
+class Milk: CoffeeDecorator{
     var withMilk: Bool = false
 
     convenience init(_ coffee: Coffee, withMilk: Bool = false) {
@@ -15,7 +15,7 @@ class Milk: CoffeeDecorator {
         self.withMilk = withMilk
     }
 
-    override func price() -> Int {
+    override func price() -> Int{
         switch self.withMilk {
         case true:
             return super.price() + 80

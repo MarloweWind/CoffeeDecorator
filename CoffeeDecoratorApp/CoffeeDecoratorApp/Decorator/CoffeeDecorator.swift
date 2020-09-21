@@ -7,15 +7,15 @@
 
 import Foundation
 
-class CoffeeDecorator: Coffee {
+class CoffeeDecorator: Coffee{
 
     var base: Coffee
 
-    init(_ base: Coffee) {
+    init(_ base: Coffee){
         self.base = base
     }
 
-    func price() -> Int {
+    func price() -> Int{
         return base.price()
     }
 }
